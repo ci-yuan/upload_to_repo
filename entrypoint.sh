@@ -10,11 +10,16 @@ echo "#### Upload to Repo ####"
 #   exit 1
 # fi
 
-ls /github/workspace/
+echo "ls /github/workspace/workspace"
+ls /github/workspace/workspace
+
+echo "pwd"
+pwd
 
 cd /
 
 # 执行
+chomd +x upload
 ./upload $INPUT_LOCAL_PATH $INPUT_USERNAME $INPUT_ACCESS_TOKEN $INPUT_REPO $INPUT_REPO_PATH $INPUT_COMMIT_MESSAGE
 
 # ./github/workspace/upload $INPUT_LOCAL_PATH $INPUT_USERNAME $INPUT_ACCESS_TOKEN $INPUT_REPO $INPUT_REPO_PATH $INPUT_COMMIT_MESSAGE
