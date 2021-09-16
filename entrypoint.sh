@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash
 
 echo "Upload to Repo"
 # time=$(date)
