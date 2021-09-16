@@ -34,13 +34,8 @@ inputs:
 #   time: # id of output
 #     description: 'The time we greeted you'
 
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.local_path }}
-    - ${{ inputs.username }}
-    - ${{ inputs.access_token }}
-    - ${{ inputs.repo }}
-    - ${{ inputs.repo_path }}
-    - ${{ inputs.commit_message }}
+# runs:
+#   using: 'docker'
+#   image: 'Dockerfile'
+#   args:
+#     - ${{ inputs.local_path }}
