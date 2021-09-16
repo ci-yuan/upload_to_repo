@@ -6,5 +6,26 @@ COPY entrypoint.sh /entrypoint.sh
 COPY upload /github/workspace/
 COPY upload /
 
+# bin
+# dev
+# entrypoint.sh
+# etc
+# github
+# home
+# lib
+# media
+# mnt
+# opt
+# proc
+# root
+# run
+# sbin
+# srv
+# sys
+# tmp
+# upload
+# usr
+# var
+
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["sh", "/entrypoint.sh"]
