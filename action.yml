@@ -1,0 +1,46 @@
+# action.yml
+name: 'Upload to Repo'
+description: 'Greet someone and record the time'
+author: 'ciyuan'
+
+# 参数
+inputs:
+  # 文件或文件夹路径
+  local_path:
+    description: 'Local file path/directory'
+    required: true
+  username:
+    description: 'GitHub username'
+    required: true
+  # github token
+  access_token:
+    description: 'GITHUB_TOKEN'
+    required: true
+  repo:
+    description: 'Repository name'
+    required: true
+  # repo 路径
+  repo_path:
+    description: 'Remote repository file path/directory, default: The root of repository'
+    required: false
+    default: ''
+  # 提交信息
+  commit_message:
+    description: 'Git commit message, default: "upload"'
+    required: false
+    default: 'upload'
+
+# outputs:
+#   time: # id of output
+#     description: 'The time we greeted you'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.local_path }}
+    - ${{ inputs.username }}
+    - ${{ inputs.access_token }}
+    - ${{ inputs.repo }}
+    - ${{ inputs.repo_path }}
+    - ${{ inputs.commit_message }}
