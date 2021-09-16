@@ -10,11 +10,6 @@ echo "#### Upload to Repo ####"
 #   exit 1
 # fi
 
-pwd
-tree
-whereis upload
-
-
 
 # 执行
 ./upload $INPUT_LOCAL_PATH $INPUT_USERNAME $INPUT_ACCESS_TOKEN $INPUT_REPO $INPUT_REPO_PATH $INPUT_COMMIT_MESSAGE
