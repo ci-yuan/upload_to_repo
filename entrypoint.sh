@@ -10,7 +10,7 @@ echo "#### Upload to Repo ####"
 #   exit 1
 # fi
 
-echo "ls /github/workspace/workspace"
+echo "ls /github/workspacee"
 ls /github/workspace/workspace
 
 echo "pwd"
