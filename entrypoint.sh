@@ -11,7 +11,7 @@ echo "#### Upload to Repo ####"
 # fi
 
 pwd
-ls
+tree
 
 # 执行
-./home/runner/work/upload_to_repo/upload_to_repo/upload $INPUT_LOCAL_PATH $INPUT_USERNAME $INPUT_ACCESS_TOKEN $INPUT_REPO $INPUT_REPO_PATH $INPUT_COMMIT_MESSAGE
+./github/workspace/upload $INPUT_LOCAL_PATH $INPUT_USERNAME $INPUT_ACCESS_TOKEN $INPUT_REPO $INPUT_REPO_PATH $INPUT_COMMIT_MESSAGE
