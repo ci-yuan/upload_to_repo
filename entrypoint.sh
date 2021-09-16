@@ -10,5 +10,8 @@ echo "#### Upload to Repo ####"
 #   exit 1
 # fi
 
+pwd
+ls
+
 # 执行
-./upload $INPUT_LOCAL_PATH $INPUT_USERNAME $INPUT_ACCESS_TOKEN $INPUT_REPO $INPUT_REPO_PATH $INPUT_COMMIT_MESSAGE
+./home/runner/work/upload_to_repo/upload_to_repo/upload $INPUT_LOCAL_PATH $INPUT_USERNAME $INPUT_ACCESS_TOKEN $INPUT_REPO $INPUT_REPO_PATH $INPUT_COMMIT_MESSAGE
