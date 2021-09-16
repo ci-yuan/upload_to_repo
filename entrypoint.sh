@@ -10,13 +10,14 @@ echo "#### Upload to Repo ####"
 #   exit 1
 # fi
 
-echo "ls /github/workspace"
-ls /github/workspace
+cd $GITHUB_WORKSPACE
+echo "#### ls wp ####"
+ls
 
-echo "pwd"
+
+echo "#### pwd ####"
 pwd
 
-cd /
 ls
 # 执行
 chmod +x upload
