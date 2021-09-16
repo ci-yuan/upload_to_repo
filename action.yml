@@ -34,8 +34,8 @@ inputs:
 #   time: # id of output
 #     description: 'The time we greeted you'
 
-# runs:
-#   using: 'docker'
-#   image: 'Dockerfile'
-#   args:
-#     - ${{ inputs.local_path }}
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  # args:
+  #   - ${{ inputs.local_path }}
