@@ -6,7 +6,7 @@ author: 'ciyuan'
 # 参数
 inputs:
   # 文件或文件夹路径
-  local_path:
+  local_dir:
     description: 'Local file path/directory'
     required: true
   username:
@@ -20,7 +20,7 @@ inputs:
     description: 'Repository name'
     required: true
   # repo 路径
-  repo_path:
+  repo_dir:
     description: 'Remote repository file path/directory, default: The root of repository'
     required: false
     default: ''
